@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Memory Calendar",
+    "slug": "memory-calendar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF8F3"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.memorycalendar"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FDF8F3"
+      },
+      "package": "com.yourcompany.memorycalendar"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Allow Memory Calendar to access your camera to add photos to events." }],
+      ["expo-image-picker", { "photosPermission": "The app accesses your photos to attach them to calendar events." }]
+    ]
+  }
+}
